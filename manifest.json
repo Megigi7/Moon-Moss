@@ -1,0 +1,21 @@
+{
+    "name": "Moon&Moss",
+    "short_name": "🌙🍀",
+    "icons": [
+      {
+        "src": "assets/img/icon/icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/img/icon/icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#ff69b4",
+    "background_color": "#ffffff"
+  }
+  

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon&Moss</title>
+
+    <!-- Manifest para convertir en PWA -->
+    <link rel="manifest" href="manifest.json">
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Moon&Moss</h1>   
+
+        <p>Holaaa esto es una prueba :]</p>
+<!-- 
+        <img :src="personaje" width="200"><br>
+
+        <h3>Elige una prenda:</h3>
+        <img v-for="ropa in ropas" :key="ropa.id" :src="ropa.imagen" 
+             @click="cambiarRopa(ropa.imagen)" class="ropa"> -->
+    </div>
+
+
+    <!-- Registro del Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(() => console.log("Service Worker registrado"));
+        }
+    </script>
+</body>
+</html>
